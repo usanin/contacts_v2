@@ -1,0 +1,8 @@
+<img class="card-img-top" src="{picture}" alt="{name}">
+<div class="card-block">
+    <h4 class="card-title">{name}</h4>
+    <p>Phone: {phone}</p>
+    <p>Group: {group}</p>
+    <a href="#edit/{id}" type="button" class="btn btn-info edit">Edit</a>
+    <button type="button" class="btn btn-danger delete">Delete</button>
+</div>

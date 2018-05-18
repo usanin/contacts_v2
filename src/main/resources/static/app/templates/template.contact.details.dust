@@ -1,0 +1,33 @@
+<div class="col-md-4 col-md-offset-4">
+    {#isEdit}
+        <h3 class="text-center">Edit contact</h3>
+    {:else}
+        <h3 class="text-center">Add new contact</h3>
+    {/isEdit}
+    <fieldset>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="form-control input-md" value="{name}">
+            <span class="help-block hidden"></span>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" class="form-control input-md" value="{phone}">
+            <span class="help-block hidden"></span>
+        </div>
+        <div class="form-group">
+            <label for="group">Group:</label>
+            <select id="group" name="group" class="form-control input-md">
+                <option value="null"></option>
+                <option value="Family" {@eq key=group value="Family"}selected{/eq}>Family</option>
+                <option value="Job" {@eq key=group value="Job"}selected{/eq}>Job</option>
+                <option value="Friends" {@eq key=group value="Friends"}selected{/eq}>Friends</option>
+            </select>
+            <span class="help-block hidden"></span>
+        </div>
+        <div class="form-group">
+            <a href="#" class="btn btn-default pull-left cancel">Cancel</a>
+            <a class="btn btn-primary pull-right save">Save</a>
+        </div>
+    </fieldset>
+</div>

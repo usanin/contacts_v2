@@ -1,0 +1,4 @@
+<div class="container">
+    <a href="#add" id="add" class="btn btn-success pull-right">Add new contact</a>
+</div>
+<div class="container" id="contacts"></div>
